@@ -1,25 +1,17 @@
 # run_analysis.R
 
-# Set working directory to the folder containing train data... 
-setwd('/Users/darasosulski/Desktop/Coursera/UCI HAR Dataset/train')
+# Read data from working directory into R
+# NOTE: All of these files to be loaded must be in your working directory 
+# before script execution! 
 
 Xtrain <- read.table("X_train.txt")
 ytrain <- read.table("y_train.txt")
 subjecttrain <- read.table("subject_train.txt")
 
-
-# Set working directory to the folder containing test data... 
-setwd('/Users/darasosulski/Desktop/Coursera/UCI HAR Dataset/test')
-
 Xtest <- read.table("X_test.txt")
 ytest <- read.table("y_test.txt")
 subjecttest <- read.table("subject_test.txt")
 
-
-# Set working directory to the folder containing features.txt... 
-setwd('/Users/darasosulski/Desktop/Coursera/UCI HAR Dataset')
-
-# Load features.txt and extract variable names... 
 featnames <- read.table("features.txt")
 names  <- sapply(featnames[,"V2"],as.character)
 
