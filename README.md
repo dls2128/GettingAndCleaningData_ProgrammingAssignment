@@ -21,7 +21,7 @@
 
 # source('file_path/run_analysis.R') 
 
-# where file_path is the location of run_analysis.R,
+# where file_path is the location of run_analysis.R
 # (e.g., '/Users/Desktop/dara/run_analysis.R)
 
 # (for ease of use, put run_analysis.R and the aforementioned .txt files
